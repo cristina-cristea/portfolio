@@ -1,0 +1,87 @@
+.skill {
+  padding: 100px 0 50px 0;
+  position: relative;
+}
+.skill-box {
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+  max-width: 70%;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 15px 0 35px 0;
+}
+.skill-slider {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+.planet-default{
+  width: 30%;
+  position: absolute;
+  right: -10%;
+  top: -7%;
+  transform: translateX(300px); 
+  transition: transform 0.8s ease-out;
+}
+.planet-popping-in{
+  transform: translateX(0); 
+}
+
+/***************** Progress circles ****************************/
+.skills-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+svg {
+  transform: rotate(-90deg); /* Start the progress at the top */
+}
+
+circle {
+  fill: none;
+  stroke-width: 10;
+}
+
+.bg {
+  stroke: #e6e6e6; /* Background circle */
+}
+
+.progress {
+  transition: stroke-dashoffset 5s ease-out; /* Smooth animation */
+  stroke-width: 10;
+}
+
+.skill-title {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
